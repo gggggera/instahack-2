@@ -3,6 +3,8 @@ import json
 import time
 import os
 
+from hackinsta import f
+
 filename = 'pass.txt'
 if os.path.isfile(filename):
 	with open(filename) as f:
@@ -106,5 +108,7 @@ for i in range(len(passwords)):
 			exit()
 		else:
 			continue
+
+list = f.read().splitlines()
 		
 
